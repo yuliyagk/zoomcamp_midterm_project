@@ -1,0 +1,10 @@
+service: "predict.py:svc"
+labels:
+   owner: bentoml-team
+   project: gallery
+include:
+- "predict.py"
+python:
+   packages:
+      - xgboost
+      - sklearn
